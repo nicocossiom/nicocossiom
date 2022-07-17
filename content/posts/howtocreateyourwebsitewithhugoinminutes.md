@@ -1,7 +1,8 @@
 ---
 title: "How I created my own website and deployed it for free in a matter of hours"
 date: 2022-07-02T19:53:51+02:00
-draft: true
+draft: false
+tags: ["Hugo", "Web-development"]
 ---
 > Disclaimer: This is a tutorial to create a simple personal website with minimal work and effort but still highly configurable and easy to maintain. If you're looking for a more complex setup with more functionality I suggest you look for other resources in those topics.
 
@@ -57,9 +58,11 @@ So I went and looked around online to see what technologies satisfied the requir
 ## Hugo
 
 As described in their [**website**](https://gohugo.io/):
-
-- `Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.`
-- `The world’s fastest framework for building websites, Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.`
+{{< quote author="Hugo Project" source="Hugo's official website" url="https://gohugo.io">}}
+Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.
+{{< /quote >}}
+{{< quote author="Hugo Project" source="Hugo's official website" url="https://gohugo.io">}}
+The world’s fastest framework for building websites, Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.{{< /quote >}}
 
 So Hugo is a web framework, this means that it is a piece of software that provides a specific way to build and deploy websites, alongside the tools needed to do so. It is very simple to use, the documentation around it is great and it has a lot of functionality baked in.
 
@@ -70,7 +73,7 @@ Quite simple in my opinion. Pretty much everything is handled for you.
 So once I saw it could do pretty much all I wanted, I started reading the [documentation](https://gohugo.io/documentation/). Nah just kidding hahaha I went ahead to the [getting-started/quickstart](https://gohugo.io/getting-started/quick-start/) page and followed the steps.
 
 > Note: I used a Mac but it pretty much works the same on other OS's except for the installation part.
-> I use Visual Studio Code as my tool for this sort of things, [here]() is another article of mine explaining VSCode, how it works, my setup extensions, etc.
+> I use Visual Studio Code as my tool for this sort of things, [here](/posts/vscodetheultimatetool) is another article of mine explaining VSCode, how it works, my setup extensions, etc.
 
 Go ahead and pull up a terminal, first we need to download Hugo, if you're on MacOS use [brew](https://brew.sh), the command is: `brew install hugo`.
 Next navigate to the directory where you want have the project, and type `hugo new site <name of your project>`. This will create a directory inside your current one, go into it.
@@ -81,5 +84,3 @@ Next step will be to choose a theme and configure it. You can check out availabl
 [Here](https://demo.stack.jimmycai.com/) is the example Hugo website of the picture above built using this theme, as you can see.
 In order to use it or any other theme use the following command inside the site folder `git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack && echo theme = \"hugo-theme-stack\" >> config.toml`
 This will download the theme from Github and append the theme attribute inside the confi.toml file, and set it to the hugo-theme-stack so hugo can read it and know to use it.
-
-
