@@ -5,7 +5,6 @@ aliases:
   - about-us
   - about-hugo
   - contact
-license: CC4
 image: 
 menu:
     main: 
@@ -13,4 +12,4 @@ menu:
         params:
             icon: user
 ---
-
+Hola esto es una pagina donde hablo de quien soy 
