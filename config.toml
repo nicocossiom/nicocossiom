@@ -2,4 +2,4 @@ baseURL = 'http://nicocossiom.com/'
 languageCode = 'en-us'
 title = 'Nico Cossio'
 theme = "hugo-theme-stack"
-disqusShortname = 'yourDisqusShortname'
+disqusShortname = 'nicocossiom'
