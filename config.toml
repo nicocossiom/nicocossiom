@@ -1,4 +1,4 @@
-baseURL = 'http://nicocossiom.com/'
+baseURL = 'https://nicocossiom.com/'
 languageCode = 'en-us'
 title = 'Nico Cossio'
 theme = "hugo-theme-stack"

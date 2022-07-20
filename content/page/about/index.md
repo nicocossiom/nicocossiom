@@ -5,11 +5,15 @@ aliases:
   - about-us
   - about-hugo
   - contact
-image: 
+author: false
+readingTime: false
+license: false
+share: false
+comments: false
 menu:
     main: 
         weight: -90
         params:
             icon: user
 ---
-Hola esto es una pagina donde hablo de quien soy 
+Hola esto es una pagina donde hablo de quien soy
