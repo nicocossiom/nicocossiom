@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Categories on Nico Cossio</title>
-        <link>http://example.org/categories/</link>
-        <description>Recent content in Categories on Nico Cossio</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Nico Cossio</title><link>https://nicocossiom.com/categories/</link><description>Recent content in Categories on Nico Cossio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 02 Jul 2022 19:53:51 +0200</lastBuildDate><atom:link href="https://nicocossiom.com/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Tutorial</title><link>https://nicocossiom.com/categories/tutorial/</link><pubDate>Sat, 02 Jul 2022 19:53:51 +0200</pubDate><guid>https://nicocossiom.com/categories/tutorial/</guid><description>&lt;img src="https://nicocossiom.com/categories/tutorial/hutomo-abrianto-l2jk-uxb1BY-unsplash.jpg" alt="Featured image of post Tutorial" /></description></item></channel></rss>

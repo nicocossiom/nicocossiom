@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://example.org/</loc>
-    <priority>0</priority>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
-  </url><url>
-    <loc>http://example.org/</loc>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
-  </url>
-</urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://nicocossiom.com/</loc><lastmod>2022-07-17T20:30:21+02:00</lastmod></url><url><loc>https://nicocossiom.com/posts/</loc><lastmod>2022-07-17T20:30:21+02:00</lastmod></url><url><loc>https://nicocossiom.com/posts/vscodetheultimatetool/</loc><lastmod>2022-07-17T20:30:21+02:00</lastmod></url><url><loc>https://nicocossiom.com/categories/</loc><lastmod>2022-07-02T19:53:51+02:00</lastmod></url><url><loc>https://nicocossiom.com/posts/howtocreateyourwebsitewithhugoandnetlify/</loc><lastmod>2022-07-02T19:53:51+02:00</lastmod></url><url><loc>https://nicocossiom.com/tags/hugo/</loc><lastmod>2022-07-02T19:53:51+02:00</lastmod></url><url><loc>https://nicocossiom.com/tags/</loc><lastmod>2022-07-02T19:53:51+02:00</lastmod></url><url><loc>https://nicocossiom.com/categories/tutorial/</loc><lastmod>2022-07-02T19:53:51+02:00</lastmod></url><url><loc>https://nicocossiom.com/tags/web-development/</loc><lastmod>2022-07-02T19:53:51+02:00</lastmod></url><url><loc>https://nicocossiom.com/page/archives/</loc><lastmod>2019-05-28T00:00:00+00:00</lastmod></url><url><loc>https://nicocossiom.com/page/</loc><lastmod>2019-05-28T00:00:00+00:00</lastmod></url><url><loc>https://nicocossiom.com/page/about/</loc></url><url><loc>https://nicocossiom.com/page/links/</loc></url><url><loc>https://nicocossiom.com/page/search/</loc></url></urlset>

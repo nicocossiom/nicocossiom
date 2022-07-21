@@ -1,19 +1,128 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-    <channel>
-        <title>Nico Cossio</title>
-        <link>http://example.org/</link>
-        <description>Recent content on Nico Cossio</description>
-        <generator>Hugo -- gohugo.io</generator>
-        <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title></title>
-        <link>http://example.org/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>http://example.org/</guid>
-        <description>&lt;p&gt;HOLA SOY NICO COSSIO&lt;/p&gt;
-</description>
-        </item>
-        
-    </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Nico Cossio</title><link>https://nicocossiom.com/</link><description>Recent content on Nico Cossio</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 17 Jul 2022 20:30:21 +0200</lastBuildDate><atom:link href="https://nicocossiom.com/index.xml" rel="self" type="application/rss+xml"/><item><title>VSCode the ultimate programmers tool</title><link>https://nicocossiom.com/posts/vscodetheultimatetool/</link><pubDate>Sun, 17 Jul 2022 20:30:21 +0200</pubDate><guid>https://nicocossiom.com/posts/vscodetheultimatetool/</guid><description>&lt;p>This is an in progresss article&lt;/p></description></item><item><title>How I created my own website and deployed it for free in a matter of hours</title><link>https://nicocossiom.com/posts/howtocreateyourwebsitewithhugoandnetlify/</link><pubDate>Sat, 02 Jul 2022 19:53:51 +0200</pubDate><guid>https://nicocossiom.com/posts/howtocreateyourwebsitewithhugoandnetlify/</guid><description>&lt;img src="https://nicocossiom.com/images/howtocreateyourwebsite/cover.gif" alt="Featured image of post How I created my own website and deployed it for free in a matter of hours" />&lt;blockquote>
+&lt;p>Disclaimer: This is a tutorial to create a simple personal website with minimal work and effort but still highly configurable and easy to maintain. If you&amp;rsquo;re looking for a more complex setup with more functionality I suggest you look for other resources in those topics.&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="table-of-contents">Table of contents&lt;/h2>
+&lt;ul>
+&lt;li>&lt;a class="link" href="#table-of-contents" >Table of contents&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#introduction" >Introduction&lt;/a>
+&lt;ul>
+&lt;li>&lt;a class="link" href="#my-use-case" >My use case&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#technical-requirements" >Technical requirements&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>&lt;a class="link" href="#hugo" >Hugo&lt;/a>
+&lt;ul>
+&lt;li>&lt;a class="link" href="#tag3" >tag3&lt;/a>
+&lt;ul>
+&lt;li>&lt;a class="link" href="#tag4" >tag4&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>I have always wanted to create a website for my own personal use. To show my portfolio, have my socials and share things that I found interesting or my own tutorials even. But I have never gotten around to do it because it just seems like a big hustle to do it.
+There are lots of decissions to make:&lt;/p>
+&lt;ul>
+&lt;li>What kind of technology should I use to build? SPA (single page app), SSG (server side rendered) or SSR (server side rendered)?&lt;/li>
+&lt;li>Where should I host my website? Is it expensive?&lt;/li>
+&lt;li>Do I need to know how to code? Or design? CSS? HTML? Javascript?&lt;/li>
+&lt;li>Where do I get a domain name? Do I even need one? I have a domain name already but I don&amp;rsquo;t know how to use it.&lt;/li>
+&lt;/ul>
+&lt;p>I had all these questions that made something that in principle seemed simple but ends up feeling very overwhelming, and makes you not want to do it.&lt;/p>
+&lt;h3 id="my-use-case">My use case&lt;/h3>
+&lt;p>What I always do in these situations is define the problem, hence I listed what I was going to use this site for:&lt;/p>
+&lt;ul>
+&lt;li>Have my socials (Twitter, Facebook, Instagram, LinkedIn, GitHub, etc.).&lt;/li>
+&lt;li>Have a small bio explaining who I am, kind of a introductory text of me for anyone that searches me on the internet.&lt;/li>
+&lt;li>Publish articles quickly.&lt;/li>
+&lt;li>Being able to categorize archive, draft and search these articles/posts.&lt;/li>
+&lt;/ul>
+&lt;h3 id="technical-requirements">Technical requirements&lt;/h3>
+&lt;p>So with this small list of use cases in mind the next step I did was to define the technical requirements:&lt;/p>
+&lt;ul>
+&lt;li>I don&amp;rsquo;t want to deal with HTML and CSS. I know how to use them to some extent but I think just writing the content is already a big enough task.&lt;/li>
+&lt;li>I would like to write documents in &lt;a class="link" href="https://www.markdownguide.org/" target="_blank" rel="noopener"
+>Markdown&lt;/a>, since I use &lt;a class="link" href="https://obsidian.md/" target="_blank" rel="noopener"
+>Obsidian&lt;/a> and &lt;a class="link" href="https://notion.so" target="_blank" rel="noopener"
+>Notion&lt;/a> for taking notes, and they use this format it seems like a good idea to keep using it. Also it is extremely easy to learn, use and has the features I am looking for, like:
+&lt;ul>
+&lt;li>A standardized format: # = H1 ## = H2, etc. &amp;gt; for blockquotes, etc. &lt;a class="link" href="https://www.markdownguide.org/basic-syntax/" target="_blank" rel="noopener"
+>Here you can check out the syntax&lt;/a>.&lt;/li>
+&lt;li>No tags (god I hate html and xml tags &amp;lt;href &amp;hellip; &amp;gt; and the sort I find them antiquated and annoying for wrinting purposes)&lt;/li>
+&lt;li>Image embedding.&lt;/li>
+&lt;li>Inline HTML, useful for things such as iframes(youtube embedded videos i.e) or to do things that markdown itself doesn&amp;rsquo;t support, which are few but exist.&lt;/li>
+&lt;li>Code block support, since I will post some coding tutorials.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>Preset styles and themes, I don&amp;rsquo;t want to deal with the design, there are people out there who have much better taste and artistic skills than me, I just want to focus on the content.&lt;/li>
+&lt;li>Dark theme: for the love of god I die inside when a website is white theme only.&lt;/li>
+&lt;li>Easily deployable, I want the code/content of the website saved in a repository in Github, write the articles &lt;strong>locally&lt;/strong> in my machine, push the changes to the remote repository on Github and the website to pick up on these changes inside the repository and update accordingly. This also allows me to revert changes easily and work in any of my machines, or even using even &lt;a class="link" href="https://github.com/features/codespaces" target="_blank" rel="noopener"
+>Github Codespaces&lt;/a> if I needed to make a quick edit.&lt;/li>
+&lt;li>Extensible in case that in the future I want to add functionlity to it. This includes:
+&lt;ul>
+&lt;li>Javascript support: being able to write static content in Markdwon is cool and all but it has limitations, being able to code in JS can be very useful.&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>I want a static site with as little JavaScript as possible, with fast loading times. I think SPA&amp;rsquo;s make sense for some type of website/applications, but for my use case it would be quite stupid to use an SPA framework like Angular for example, like we say in Spain: &amp;ldquo;It would be killing flies with cannons&amp;rdquo;.&lt;/li>
+&lt;/ul>
+&lt;p>So I went and looked around online to see what technologies satisfied the requirements and I stumbled across &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+>&lt;strong>Hugo&lt;/strong>&lt;/a>.&lt;/p>
+&lt;h2 id="hugo">Hugo&lt;/h2>
+&lt;p>As described in their &lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+>&lt;strong>website&lt;/strong>&lt;/a>:
+&lt;blockquote>
+&lt;p>Hugo is a fast and modern static site generator written in Go, and designed to make website creation fun again.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Hugo Project, &lt;/span>&lt;a href="https://gohugo.io">&lt;cite>Hugo&amp;#39;s official website&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>
+&lt;blockquote>
+&lt;p>The world’s fastest framework for building websites, Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&lt;/p>&lt;span class="cite">&lt;span>― &lt;/span>&lt;span>Hugo Project, &lt;/span>&lt;a href="https://gohugo.io">&lt;cite>Hugo&amp;#39;s official website&lt;/cite>&lt;/a>&lt;/span>&lt;/blockquote>&lt;/p>
+&lt;p>So Hugo is a web framework, this means that it is a piece of software that provides a specific way to build and deploy websites, alongside the tools needed to do so. It is very simple to use, the documentation around it is great and it has a lot of functionality baked in.&lt;/p>
+&lt;p>The rundown of how it works. Yow download Hugo, create a project, choose an already created theme or you can build your own, configure the theme and some Hugo options, execute a Hugo command to launch a local server to test and preview stuff while you write your content in markdown, once you&amp;rsquo;re done you execute another command to generate the static website(HTML,CSS, etc.) and deploy it wherever you want.&lt;/p>
+&lt;p>Quite simple in my opinion. Pretty much everything is handled for you.&lt;/p>
+&lt;p>So once I saw it could do pretty much all I wanted, I started reading the &lt;a class="link" href="https://gohugo.io/documentation/" target="_blank" rel="noopener"
+>documentation&lt;/a>. Nah just kidding hahaha I went ahead to the &lt;a class="link" href="https://gohugo.io/getting-started/quick-start/" target="_blank" rel="noopener"
+>getting-started/quickstart&lt;/a> page and followed the steps.&lt;/p>
+&lt;blockquote>
+&lt;p>Note: I used a Mac but it pretty much works the same on other OS&amp;rsquo;s except for the installation part.
+I use Visual Studio Code as my tool for this sort of things, &lt;a class="link" href="https://nicocossiom.com/posts/vscodetheultimatetool" >here&lt;/a> is another article of mine explaining VSCode, how it works, my setup extensions, etc.&lt;/p>
+&lt;/blockquote>
+&lt;p>Go ahead and pull up a terminal, first we need to download Hugo, if you&amp;rsquo;re on MacOS use &lt;a class="link" href="https://brew.sh" target="_blank" rel="noopener"
+>brew&lt;/a>, the command is: &lt;code>brew install hugo&lt;/code>.
+Next navigate to the directory where you want have the project, and type &lt;code>hugo new site &amp;lt;name of your project&amp;gt;&lt;/code>. This will create a directory inside your current one, go into it.
+Next step will be to choose a theme and configure it. You can check out available themes &lt;a class="link" href="" >here&lt;/a>, I decided to go with &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener"
+>Hugo Theme Stack&lt;/a> by Cai Jimmy. This is what it can look like using it.&lt;/p>
+&lt;p>&lt;img src="https://nicocossiom.com/images/howtocreateyourwebsite/hugo_theme_stack_web.png"
+loading="lazy"
+alt="Theme example website"
+>&lt;/p>
+&lt;p>&lt;a class="link" href="https://demo.stack.jimmycai.com/" target="_blank" rel="noopener"
+>Here&lt;/a> is the example Hugo website of the picture above built using this theme, as you can see.
+In order to use it or any other theme use the following command inside the site folder &lt;code>git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack &amp;amp;&amp;amp; echo theme = \&amp;quot;hugo-theme-stack\&amp;quot; &amp;gt;&amp;gt; config.toml&lt;/code>
+This will download the theme from Github and append the theme attribute inside the confi.toml file, and set it to the hugo-theme-stack so hugo can read it and know to use it.&lt;/p>
+&lt;div class="video-wrapper" >
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/1sZYhY5cEg0"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>Minim aliqua adipisicing cillum id duis consequat quis sit magna culpa qui. Dolore ad quis velit amet veniam voluptate. Sunt ipsum sit duis officia non cupidatat quis consequat.&lt;/p>
+&lt;p>Quis excepteur esse ullamco culpa et dolore incididunt excepteur ullamco fugiat aliquip sunt dolore. Sint culpa elit quis amet sint labore occaecat Lorem cupidatat sunt. Aliquip consectetur voluptate dolore tempor mollit ex est sunt eu. Ea sint esse cupidatat velit quis ut dolor laborum.&lt;/p>
+&lt;p>Cillum consectetur ipsum eu est mollit sit consequat qui ea mollit cillum incididunt amet. Reprehenderit pariatur velit deserunt commodo officia eu laboris cupidatat ipsum duis excepteur. Esse velit quis quis eu sint in.&lt;/p>
+&lt;p>Ea non veniam Lorem dolore velit officia est incididunt nisi do consequat est. Eiusmod officia dolor nulla cupidatat cillum nisi anim dolor in elit magna ea esse. Ipsum magna commodo deserunt sint.&lt;/p>
+&lt;p>Esse est nulla eiusmod fugiat. Ex ea adipisicing fugiat minim ea nulla magna commodo pariatur. Anim eu ad nostrud eu voluptate id ea aliquip ut ullamco. Ipsum est voluptate elit est elit esse sint nostrud dolore. Do dolore laboris dolore excepteur cillum ad exercitation ex in aute. Ex voluptate cupidatat aute velit irure ex officia velit tempor quis. Nisi irure sunt occaecat nulla sunt ad aliquip et eu sit pariatur amet minim.&lt;/p>
+&lt;h3 id="tag3">tag3&lt;/h3>
+&lt;p>nola&lt;/p>
+&lt;h4 id="tag4">tag4&lt;/h4>
+&lt;p>adios&lt;/p></description></item><item><title>Archives</title><link>https://nicocossiom.com/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://nicocossiom.com/page/archives/</guid><description/></item><item><title>About me</title><link>https://nicocossiom.com/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nicocossiom.com/page/about/</guid><description>&lt;p>Hola esto es una pagina donde hablo de quien soy&lt;/p></description></item><item><title>Links</title><link>https://nicocossiom.com/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nicocossiom.com/page/links/</guid><description>&lt;p>To use this feature, add &lt;code>links&lt;/code> section to frontmatter.&lt;/p>
+&lt;p>This page&amp;rsquo;s frontmatter:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">links&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#ae81ff">GitHub&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">description&lt;/span>: &lt;span style="color:#ae81ff">GitHub is the world&amp;#39;s largest software development platform.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">website&lt;/span>: &lt;span style="color:#ae81ff">https://github.com&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#ae81ff">https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#f92672">title&lt;/span>: &lt;span style="color:#ae81ff">TypeScript&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">description&lt;/span>: &lt;span style="color:#ae81ff">TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">website&lt;/span>: &lt;span style="color:#ae81ff">https://www.typescriptlang.org&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#f92672">image&lt;/span>: &lt;span style="color:#ae81ff">ts-logo-128.jpg&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>image&lt;/code> field accepts both local and external images.&lt;/p></description></item><item><title>Search</title><link>https://nicocossiom.com/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://nicocossiom.com/page/search/</guid><description/></item></channel></rss>
